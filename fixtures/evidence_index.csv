@@ -1,0 +1,10 @@
+source_document_id,document_type,label,provenance,note
+SYN-DOC-INV-101,invoice,Synthetic invoice INV-101,synthetic,Provenance only; not a cash transaction source
+SYN-DOC-PO-201,purchase_order,Synthetic PO 201,synthetic,Provenance only
+SYN-DOC-PAY-OCT,payroll_register,Synthetic October payroll register,synthetic,Provenance only
+SYN-DOC-INV-102,invoice,Synthetic invoice INV-102,synthetic,Provenance only
+SYN-DOC-LEASE-01,lease,Synthetic warehouse lease,synthetic,Provenance only
+SYN-DOC-INV-103,invoice,Synthetic invoice INV-103,synthetic,Provenance only
+SYN-DOC-ORDER-001,purchase_order,Synthetic buyer order ORDER-001,synthetic,Provenance only
+SYN-DOC-QUOTE-MAT-001,quote,Synthetic material quote,synthetic,Provenance only
+SYN-DOC-QUOTE-LOG-001,quote,Synthetic logistics quote,synthetic,Provenance only

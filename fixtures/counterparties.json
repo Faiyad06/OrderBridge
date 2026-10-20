@@ -1,0 +1,11 @@
+[
+  {"counterparty_id": "SUP-MAT-001", "display_name": "Demo Pearl Materials Co. (synthetic)", "role": "materials_supplier", "test_account": "SANDBOX-6222000000004471", "payment_allowlisted": true},
+  {"counterparty_id": "SUP-OTH-201", "display_name": "Demo Packaging Supplier (synthetic)", "role": "supplier", "test_account": "SANDBOX-6222000000009120", "payment_allowlisted": false},
+  {"counterparty_id": "LOGI-001", "display_name": "Demo Delta Logistics (synthetic)", "role": "logistics", "test_account": "SANDBOX-6222000000003318", "payment_allowlisted": false},
+  {"counterparty_id": "BUY-001", "display_name": "Demo Harbour Retail Buyer (synthetic)", "role": "buyer", "test_account": "SANDBOX-6222000000007702", "payment_allowlisted": false},
+  {"counterparty_id": "CUST-101", "display_name": "Demo Customer 101 (synthetic)", "role": "customer", "test_account": null, "payment_allowlisted": false},
+  {"counterparty_id": "CUST-102", "display_name": "Demo Customer 102 (synthetic)", "role": "customer", "test_account": null, "payment_allowlisted": false},
+  {"counterparty_id": "CUST-103", "display_name": "Demo Customer 103 (synthetic)", "role": "customer", "test_account": null, "payment_allowlisted": false},
+  {"counterparty_id": "PAYROLL-001", "display_name": "Synthetic payroll batch", "role": "payroll", "test_account": null, "payment_allowlisted": false},
+  {"counterparty_id": "LANDLORD-001", "display_name": "Demo Warehouse Landlord (synthetic)", "role": "landlord", "test_account": null, "payment_allowlisted": false}
+]

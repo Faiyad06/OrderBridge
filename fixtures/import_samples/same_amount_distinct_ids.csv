@@ -1,0 +1,3 @@
+event_id,date,direction,amount_cny,currency,category,counterparty_id,source_document_id,source_ref,confirmation_status,description
+E-007,2026-10-20,out,10000.00,CNY,supplier_payment,SUP-OTH-201,SYN-DOC-PO-207,extra#row2,parsed_unconfirmed,Synthetic packaging top-up (identical amount to E-008 but a distinct record)
+E-008,2026-10-20,out,10000.00,CNY,supplier_payment,SUP-OTH-201,SYN-DOC-PO-208,extra#row3,parsed_unconfirmed,Synthetic second packaging order

@@ -1,0 +1,11 @@
+.env
+data/
+backend/.venv/
+**/__pycache__/
+.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+*.sqlite3*
+OrderBridge_project.zip

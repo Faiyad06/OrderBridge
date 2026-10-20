@@ -1,0 +1,7 @@
+event_id,date,direction,amount_cny,currency,category,counterparty_id,source_document_id,source_ref,confirmation_status,description
+E-001,2026-10-02,in,60000.00,CNY,customer_receipt,CUST-101,SYN-DOC-INV-101,cash_events.csv#row2,synthetic,Synthetic receivable from Demo Customer 101
+E-002,2026-10-03,out,50000.00,CNY,supplier_payment,SUP-OTH-201,SYN-DOC-PO-201,cash_events.csv#row3,synthetic,Synthetic payment to Demo Packaging Supplier
+E-003,2026-10-08,out,40000.00,CNY,payroll,PAYROLL-001,SYN-DOC-PAY-OCT,cash_events.csv#row4,synthetic,Synthetic October payroll
+E-004,2026-10-15,in,80000.00,CNY,customer_receipt,CUST-102,SYN-DOC-INV-102,cash_events.csv#row5,synthetic,Synthetic receivable from Demo Customer 102
+E-005,2026-10-22,out,30000.00,CNY,rent,LANDLORD-001,SYN-DOC-LEASE-01,cash_events.csv#row6,synthetic,Synthetic warehouse rent
+E-006,2026-10-31,in,60000.00,CNY,customer_receipt,CUST-103,SYN-DOC-INV-103,cash_events.csv#row7,synthetic,Synthetic receivable from Demo Customer 103

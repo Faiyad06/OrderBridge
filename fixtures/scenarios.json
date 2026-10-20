@@ -1,0 +1,27 @@
+{
+  "scenarios": [
+    {"scenario_id": "no_order", "label": "No order (baseline)", "include_order": false, "transformations": [], "conditions": []},
+    {"scenario_id": "current_terms", "label": "Accept on current terms", "include_order": true, "transformations": [], "conditions": []},
+    {"scenario_id": "buyer_deposit", "label": "30% buyer deposit", "include_order": true,
+     "transformations": [{"type": "replace", "target_event_id": "ORD-001-RCPT", "condition_id": "buyer_deposit_30pct", "replacements": [
+        {"event_id": "ORD-001-DEP", "date": "2026-10-01", "direction": "in", "amount_cny": "66000.00", "category": "order_deposit", "counterparty_id": "BUY-001", "description": "Proposed 30% buyer deposit (day 0)"},
+        {"event_id": "ORD-001-RCPT-BAL", "date": "2026-11-15", "direction": "in", "amount_cny": "154000.00", "category": "order_receipt", "counterparty_id": "BUY-001", "description": "Reduced final buyer receipt (day 45)"}]}],
+     "conditions": ["buyer_deposit_30pct"]},
+    {"scenario_id": "supplier_deferral", "label": "50% supplier deferral", "include_order": true,
+     "transformations": [{"type": "replace", "target_event_id": "ORD-001-MAT", "condition_id": "supplier_deferral_50pct", "replacements": [
+        {"event_id": "ORD-001-MAT-1", "date": "2026-10-04", "direction": "out", "amount_cny": "70000.00", "category": "order_material", "counterparty_id": "SUP-MAT-001", "description": "Material payment instalment 1 (day 3)"},
+        {"event_id": "ORD-001-MAT-2", "date": "2026-11-16", "direction": "out", "amount_cny": "70000.00", "category": "order_material", "counterparty_id": "SUP-MAT-001", "description": "Deferred material payment instalment 2 (day 46)"}]}],
+     "conditions": ["supplier_deferral_50pct"]},
+    {"scenario_id": "combined_terms", "label": "Deposit + supplier deferral", "include_order": true,
+     "transformations": [{"ref": "buyer_deposit"}, {"ref": "supplier_deferral"}],
+     "conditions": ["buyer_deposit_30pct", "supplier_deferral_50pct"]},
+    {"scenario_id": "illustrative_loan", "label": "Current terms + illustrative loan", "include_order": true,
+     "transformations": [{"type": "loan", "product_id": "illustrative_working_capital", "principal_cny": "110000.00", "draw_date": "2026-10-04", "repay_date": "2026-11-16"}],
+     "conditions": ["credit_eligibility"]}
+  ],
+  "conditions": {
+    "buyer_deposit_30pct": {"label": "Buyer pays 30% deposit (CNY 66,000) on 2026-10-01; final receipt reduced to CNY 154,000", "counterparty_id": "BUY-001", "acceptable_by_owner": true},
+    "supplier_deferral_50pct": {"label": "Supplier accepts CNY 70,000 on 2026-10-04 and CNY 70,000 on 2026-11-16", "counterparty_id": "SUP-MAT-001", "acceptable_by_owner": true},
+    "credit_eligibility": {"label": "Credit eligibility for the illustrative loan", "counterparty_id": null, "acceptable_by_owner": false, "fixed_status": "not_assessed"}
+  }
+}

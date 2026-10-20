@@ -1,0 +1,7 @@
+event_id,date,direction,amount_cny,currency,category,counterparty_id,source_document_id,source_ref,confirmation_status,description
+X-001,2026-13-40,in,100.00,CNY,misc,CUST-1,SYN-DOC-X,bad#row2,synthetic,Bad date
+X-002,2026-10-05,sideways,100.00,CNY,misc,CUST-1,SYN-DOC-X,bad#row3,synthetic,Bad direction
+X-003,2026-10-05,in,100.005,CNY,misc,CUST-1,SYN-DOC-X,bad#row4,synthetic,Too many decimals
+X-004,2026-10-05,in,=SUM(A1:A9),CNY,misc,CUST-1,SYN-DOC-X,bad#row5,synthetic,Formula in amount
+X-005,2026-10-05,in,100.00,USD,misc,CUST-1,SYN-DOC-X,bad#row6,synthetic,Unsupported currency
+X-006,2026-10-05,out,250.00,CNY,misc,CUST-1,SYN-DOC-X,bad#row7,synthetic,=HYPERLINK("http://example.invalid")

@@ -1,0 +1,2 @@
+event_id,date,direction,amount_cny,currency,category,counterparty_id,source_document_id,source_ref,confirmation_status,description
+E-001,2026-10-02,in,65000.00,CNY,customer_receipt,CUST-101,SYN-DOC-INV-101,reimport#row2,parsed_unconfirmed,Conflicting copy of E-001 with a different amount

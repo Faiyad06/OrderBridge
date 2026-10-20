@@ -1,0 +1,18 @@
+{
+  "business_id": "demo_gba_001",
+  "display_name": "Demo GBA Trading",
+  "synthetic": true,
+  "currency": "CNY",
+  "timezone": "Asia/Shanghai",
+  "opening_date": "2026-10-01",
+  "opening_cash_cny": "100000.00",
+  "owner_buffer_cny": "20000.00",
+  "horizon_end": "2026-11-16",
+  "order": {
+    "order_id": "ORDER-001",
+    "buyer_id": "BUY-001",
+    "revenue_event_id": "ORD-001-RCPT",
+    "cost_event_ids": ["ORD-001-MAT", "ORD-001-FUL"],
+    "question": "Can I accept this CNY 220000 order without missing payroll?"
+  }
+}

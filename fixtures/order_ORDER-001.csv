@@ -1,0 +1,4 @@
+event_id,date,direction,amount_cny,currency,category,counterparty_id,source_document_id,source_ref,confirmation_status,description
+ORD-001-RCPT,2026-11-15,in,220000.00,CNY,order_receipt,BUY-001,SYN-DOC-ORDER-001,order_ORDER-001.csv#row2,synthetic,Synthetic buyer payment for ORDER-001 (day 45)
+ORD-001-MAT,2026-10-04,out,140000.00,CNY,order_material,SUP-MAT-001,SYN-DOC-QUOTE-MAT-001,order_ORDER-001.csv#row3,synthetic,Synthetic material cost for ORDER-001 (day 3)
+ORD-001-FUL,2026-10-11,out,20000.00,CNY,order_fulfillment,LOGI-001,SYN-DOC-QUOTE-LOG-001,order_ORDER-001.csv#row4,synthetic,Synthetic fulfillment cost for ORDER-001 (day 10)

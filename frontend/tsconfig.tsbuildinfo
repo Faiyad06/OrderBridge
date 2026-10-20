@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/cashchart.tsx","./src/api.ts","./src/comparison.ts","./src/format.ts","./src/main.tsx","./src/shared.tsx","./src/screens/action.tsx","./src/screens/compare.tsx","./src/screens/decision.tsx","./src/screens/evidence.tsx","./src/screens/overview.tsx","./src/screens/receipt.tsx"],"version":"5.6.3"}

@@ -1,0 +1,20 @@
+[
+  {"product_id": "illustrative_working_capital", "label": "Illustrative product: working-capital line", "synthetic": true,
+   "purpose": "working_capital", "currency": "CNY", "min_principal_cny": "10000.00", "max_principal_cny": "150000.00", "max_term_days": 60,
+   "annual_simple_rate": "0.12", "day_count_basis": 365, "fee_cny": "500.00", "fee_timing": "at_repayment",
+   "required_evidence": ["Business registration", "Six months of bank statements", "Signed buyer order"],
+   "eligibility": {"credit_approval": "not_assessed", "kyc": "not_assessed"},
+   "disclaimer": "Fictional terms for comparison only. Not an offer, not WeBank pricing, no approval implied."},
+  {"product_id": "illustrative_short_bridge", "label": "Illustrative product: short bridge", "synthetic": true,
+   "purpose": "working_capital", "currency": "CNY", "min_principal_cny": "5000.00", "max_principal_cny": "80000.00", "max_term_days": 15,
+   "annual_simple_rate": "0.09", "day_count_basis": 365, "fee_cny": "200.00", "fee_timing": "at_repayment",
+   "required_evidence": ["Business registration", "Three months of bank statements"],
+   "eligibility": {"credit_approval": "not_assessed", "kyc": "not_assessed"},
+   "disclaimer": "Fictional terms for comparison only. Not an offer, no approval implied."},
+  {"product_id": "illustrative_equipment_only", "label": "Illustrative product: equipment finance", "synthetic": true,
+   "purpose": "equipment_acquisition", "currency": "CNY", "min_principal_cny": "20000.00", "max_principal_cny": "500000.00", "max_term_days": 1095,
+   "annual_simple_rate": "0.08", "day_count_basis": 365, "fee_cny": "1000.00", "fee_timing": "at_draw",
+   "required_evidence": ["Equipment invoice", "Business registration"],
+   "eligibility": {"credit_approval": "not_assessed", "kyc": "not_assessed"},
+   "disclaimer": "Fictional terms. Restricted to equipment purchases."}
+]

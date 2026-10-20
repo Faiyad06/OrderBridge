@@ -1,0 +1,15 @@
+{
+  "description": "Synthetic seeding of the isolated day-3 sandbox for the accepted combined-terms case. Not a deposit from a real bank.",
+  "scenario_id": "combined_terms",
+  "required_conditions": ["buyer_deposit_30pct", "supplier_deferral_50pct"],
+  "simulated_date": "2026-10-04",
+  "currency": "CNY",
+  "opening_cash_cny": "100000.00",
+  "settled_inputs": [
+    {"event_id": "ORD-001-DEP", "actual_date": "2026-10-01", "direction": "in", "amount_cny": "66000.00"},
+    {"event_id": "E-001", "actual_date": "2026-10-02", "direction": "in", "amount_cny": "60000.00"},
+    {"event_id": "E-002", "actual_date": "2026-10-03", "direction": "out", "amount_cny": "50000.00"}
+  ],
+  "expected_available_cny": "176000.00",
+  "candidate_action": {"recipient_id": "SUP-MAT-001", "obligation_event_id": "ORD-001-MAT-1", "amount_cny": "70000.00", "expected_after_cny": "106000.00"}
+}
